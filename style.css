@@ -1,0 +1,85 @@
+body {
+	font-family:Century Gothic;
+}
+
+h1 {
+	font-family:Century Gothic;
+	color:teal;
+}
+
+/*The code above applies settings to the fonts of the overall website*/
+
+/* Add a black background color to the top navigation */
+.navbar {
+  background-color: teal;
+  overflow: hidden;
+
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 120px;
+  text-decoration: none;
+  font-size: 18px;
+  border-right: 1px solid white;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: white;
+  color: teal;
+}
+
+/*The code above specifically applies to the navigation bar*/
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  position: relative;
+  float: left;
+  padding: 5px;
+  left: 200px;
+  top:150px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/*------------------------------------------------------*/
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: teal;
+}
+.container:hover .overlay {
+  opacity: 0.85;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*The text above pertains to the hover overlay of the images in the home page*/
+	
