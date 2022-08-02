@@ -21,10 +21,10 @@ h1 {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 20px 120px;
+
+  padding: 20px 90px;
   text-decoration: none;
   font-size: 18px;
-  border-right: 1px solid white;
 }
 
 /* Change the color of links on hover */
