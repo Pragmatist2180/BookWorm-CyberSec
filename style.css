@@ -9,33 +9,55 @@ h1 {
 
 /*The code above applies settings to the fonts of the overall website*/
 
-/* Add a black background color to the top navigation */
-.navbar {
-  background-color: teal;
-  overflow: hidden;
-
+.page_icon {
+  position: absolute;
+  float: left;
+  left: 1450px;
+  top: 25px;
 }
 
-/* Style the links inside the navigation bar */
+.page_icon2 {
+  position: absolute;
+  float: left;
+  left: 1425px;
+  top: 25px;
+}
+
+/*References for the icons used
+teal house icon on home page: http://www.clker.com/clipart-teal-house-1.html
+eye icon on BookWorm page: https://www2.deloitte.com/content/dam/html/uk/ip-advisory/IP-icon-evaluate.png redesigned by Ferghus Dorais
+teal grad cap on Educational Program page: https://www.edfundwest.org/wp-content/uploads/2020/12/icon_impact_03.png
+pencil icon on Sign Up page: https://qntm.marketing/wp-content/uploads/2018/02/editorial.png
+cloud icon on Site Map page: https://www.pinclipart.com/picdir/big/366-3661145_big-gray-cloud-heart-clipart.png */
+
+/*The code above applies to the icons on the top right side of each page*/
+
+
+.navbar {
+  position: relative;
+  right: 8px;
+  background-color: teal;
+  overflow: hidden;
+}
+
+
 .navbar a {
   float: left;
   color: #f2f2f2;
   text-align: center;
-
   padding: 20px 90px;
   text-decoration: none;
   font-size: 18px;
 }
 
-/* Change the color of links on hover */
+
 .navbar a:hover {
   background-color: white;
   color: teal;
 }
 
-/*The code above specifically applies to the navigation bar*/
 
-/* Three image containers (use 25% for four, and 50% for two, etc) */
+
 .column {
   position: relative;
   float: left;
@@ -44,15 +66,15 @@ h1 {
   top:150px;
 }
 
-/* Clear floats after image containers */
+
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
+/*Reference used for the navigation bar: https://www.w3schools.com/Css/css_navbar_horizontal.asp
+The code above specifically applies to the navigation bar*/
 
-
-/*------------------------------------------------------*/
 .overlay{
   position: absolute;
   top: 0;
@@ -80,5 +102,14 @@ h1 {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
 /*The text above pertains to the hover overlay of the images in the home page*/
+/*Reference used for image hoverlays: https://www.w3schools.com/css/css3_images.asp
+
+
+/*References for the images used in the home page and the BookWorm Page
+first image: https://cdn.careeronestop.org/OccVids/OccupationVideos/13-1151.00.mp4 (stock video screenshot)
+second image: http://www.coopergibson.co.uk/wp-content/uploads/2018/09/strategic-planning.jpg
+third image: https://www.stopthebreaks.com/wp-content/uploads/2015/02/4-things-independent-hip-hop-artists-should-consider-when-hiring-a-manager-1.jpg 
+
+
+	
