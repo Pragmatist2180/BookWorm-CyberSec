@@ -7,7 +7,7 @@
 	</head>
 	
 	<body>
-		<h1> Sign Up Form </h1></br>
+		<h1> Registration </h1></br>
 		
 		<div class="page_icon">
 			<img src="pencil.jpg" width="40" height="40">
@@ -21,8 +21,39 @@
 			<a href="page5.html">Site Map</a>
 		
 		</div></br>
-		
-		<h3>Our form will go here, the final "content" page before the site map.</h3>
+		<h2>Sign up for our Newsletter!</h2>
+                <link href ="style.css" rel="stylesheet">           
+                <form action="NewsletterForm.php" method="post" onsubmit="FormProcessed()">
+                    <label for="TB_FName"> First Name: </label>
+                    <input type="text" name="TB_FName" id="TB_FName" pattern="[a-zA-Z]+"
+                    title="Field can NOT include any special characters, numbers or spaces!" required>
+                    <br/>
+                    <br/>
+                    <label for="TB_LName"> Last Name: </label>
+                    <input type="text" name="TB_LName" id="TB_LName" pattern="[a-zA-Z]+"
+                    title="Field can NOT include any special characters,numbers or spaces!" required>
+                    <br/>
+                    <br/>
+                    <label for="TB_Email"> Email: </label>
+                    <input type="email" name="TB_Email" id="TB_Email" required>
+                    <br/>
+                    <br/>  
+                    <label for="TB_Age"> Age: </label>                   
+                    <input type="number" id="age" name="age" min="1" max="120" required>
+                    </input>  
+                    <br/>
+                    <br/>
+                    <br/>
+                    <input type="submit" value="Register" onclick="FormProcessed()">               
+                    <input type="reset" value="Clear Form">
+                </form>
+               
+                <script>
+                function FormProcessed() {
+                alert("You have signed up successfully");
+				location.href = 'index.html';
+                }
+                </script>
 		
 		
 	</body>
